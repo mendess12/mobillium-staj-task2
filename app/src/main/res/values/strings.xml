@@ -19,4 +19,6 @@
     <string name="yol1">Birinci Yol</string>
     <string name="yol2">İkinci Yol</string>
     <string name="yol3">üçüncü Yol</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

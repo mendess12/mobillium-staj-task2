@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_200"
-    tools:context=".birinciyol.ListActivity">
+    tools:context=".ikinciyol.ListFragment">
+
 
     <TextView
-        android:id="@+id/tarihTv"
+        android:id="@+id/tarihTvListFragment"
         style="@style/medium_20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,17 +21,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/gunTv"
+        android:id="@+id/gunTvListFragment"
         style="@style/regular_14sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/gun"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tarihTv" />
+        app:layout_constraintTop_toBottomOf="@+id/tarihTvListFragment" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView1"
+        android:id="@+id/cardView1ListFragment"
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_150dp"
         android:layout_margin="@dimen/margin_16dp"
@@ -37,14 +39,14 @@
         app:cardCornerRadius="@dimen/margin_16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gunTv">
+        app:layout_constraintTop_toBottomOf="@+id/gunTvListFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/dereceTVListScreen1"
+                android:id="@+id/dereceTVListFragment1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
@@ -54,23 +56,23 @@
                 android:textColor="@color/purple_700"
                 android:textSize="64sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen1"
+                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListFragment1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/dereceAraligiTVListScreen1"
+                android:id="@+id/dereceAraligiTVListFragment1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
                 android:text="@string/derece_araligi"
-                app:layout_constraintBottom_toTopOf="@+id/sehirTVListScreen1"
+                app:layout_constraintBottom_toTopOf="@+id/sehirTVListFragment1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dereceTVListScreen1" />
+                app:layout_constraintTop_toBottomOf="@+id/dereceTVListFragment1" />
 
             <TextView
-                android:id="@+id/sehirTVListScreen1"
+                android:id="@+id/sehirTVListFragment1"
                 style="@style/medium_20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,7 +85,7 @@
 
 
             <ImageView
-                android:id="@+id/sunnyIVListScreen1"
+                android:id="@+id/sunnyIVListFragment1"
                 android:layout_width="@dimen/margin_64dp"
                 android:layout_height="@dimen/margin_64dp"
                 android:layout_marginStart="170dp"
@@ -91,11 +93,11 @@
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:src="@drawable/ic_sunny"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/dereceTVListScreen1"
+                app:layout_constraintStart_toEndOf="@+id/dereceTVListFragment1"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/gunseliTVListScreen1"
+                android:id="@+id/gunseliTVListFragment1"
                 style="@style/medium_16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -105,13 +107,13 @@
                 android:text="@string/hava_durumu"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/sehirTVListScreen1" />
+                app:layout_constraintStart_toEndOf="@+id/sehirTVListFragment1" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/cardView2ListFragment"
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_150dp"
         android:layout_margin="@dimen/margin_16dp"
@@ -119,14 +121,14 @@
         app:cardCornerRadius="@dimen/margin_16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView1">
+        app:layout_constraintTop_toBottomOf="@+id/cardView1ListFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/dereceTVListScreen2"
+                android:id="@+id/dereceTVListFragment2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
@@ -136,23 +138,23 @@
                 android:textColor="@color/purple_700"
                 android:textSize="64sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen2"
+                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListFragment2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/dereceAraligiTVListScreen2"
+                android:id="@+id/dereceAraligiTVListFragment2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
                 android:text="@string/derece_araligi"
-                app:layout_constraintBottom_toTopOf="@+id/sehirTVListScreen2"
+                app:layout_constraintBottom_toTopOf="@+id/sehirTVListFragment2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dereceTVListScreen2" />
+                app:layout_constraintTop_toBottomOf="@+id/dereceTVListFragment2" />
 
             <TextView
-                android:id="@+id/sehirTVListScreen2"
+                android:id="@+id/sehirTVListFragment2"
                 style="@style/medium_20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -165,7 +167,7 @@
 
 
             <ImageView
-                android:id="@+id/sunnyIVListScreen2"
+                android:id="@+id/sunnyIVListFragment2"
                 android:layout_width="@dimen/margin_64dp"
                 android:layout_height="@dimen/margin_64dp"
                 android:layout_marginStart="170dp"
@@ -173,11 +175,11 @@
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:src="@drawable/ic_sunny"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/dereceTVListScreen2"
+                app:layout_constraintStart_toEndOf="@+id/dereceTVListFragment2"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/gunseliTVListScreen2"
+                android:id="@+id/gunseliTVListFragment2"
                 style="@style/medium_16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -187,7 +189,7 @@
                 android:text="@string/hava_durumu"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/sehirTVListScreen2" />
+                app:layout_constraintStart_toEndOf="@+id/sehirTVListFragment2" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -195,7 +197,7 @@
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
+        android:id="@+id/cardView3ListFragment"
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_150dp"
         android:layout_margin="@dimen/margin_16dp"
@@ -203,14 +205,14 @@
         app:cardCornerRadius="@dimen/margin_16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+        app:layout_constraintTop_toBottomOf="@+id/cardView2ListFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/dereceTVListScreen3"
+                android:id="@+id/dereceTVListFragment3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
@@ -220,23 +222,23 @@
                 android:textColor="@color/purple_700"
                 android:textSize="64sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen3"
+                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListFragment3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/dereceAraligiTVListScreen3"
+                android:id="@+id/dereceAraligiTVListFragment3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
                 android:text="@string/derece_araligi"
-                app:layout_constraintBottom_toTopOf="@+id/sehirTVListScreen3"
+                app:layout_constraintBottom_toTopOf="@+id/sehirTVListFragment3"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dereceTVListScreen3" />
+                app:layout_constraintTop_toBottomOf="@+id/dereceTVListFragment3" />
 
             <TextView
-                android:id="@+id/sehirTVListScreen3"
+                android:id="@+id/sehirTVListFragment3"
                 style="@style/medium_20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -249,7 +251,7 @@
 
 
             <ImageView
-                android:id="@+id/sunnyIVListScreen3"
+                android:id="@+id/sunnyIVListFragment3"
                 android:layout_width="@dimen/margin_64dp"
                 android:layout_height="@dimen/margin_64dp"
                 android:layout_marginStart="170dp"
@@ -257,11 +259,11 @@
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:src="@drawable/ic_sunny"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/dereceTVListScreen3"
+                app:layout_constraintStart_toEndOf="@+id/dereceTVListFragment3"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/gunseliTVListScreen3"
+                android:id="@+id/gunseliTVListFragment3"
                 style="@style/medium_16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -271,7 +273,7 @@
                 android:text="@string/sakarya"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/sehirTVListScreen3" />
+                app:layout_constraintStart_toEndOf="@+id/sehirTVListFragment3" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -280,7 +282,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
+        android:id="@+id/cardView4ListFragment"
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_150dp"
         android:layout_margin="@dimen/margin_16dp"
@@ -288,14 +290,14 @@
         app:cardCornerRadius="@dimen/margin_16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+        app:layout_constraintTop_toBottomOf="@+id/cardView3ListFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/dereceTVListScreen4"
+                android:id="@+id/dereceTVListFragment4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
@@ -305,23 +307,23 @@
                 android:textColor="@color/purple_700"
                 android:textSize="64sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen4"
+                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListFragment4"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/dereceAraligiTVListScreen4"
+                android:id="@+id/dereceAraligiTVListFragment4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
                 android:text="@string/derece_araligi"
-                app:layout_constraintBottom_toTopOf="@+id/sehirTVListScreen4"
+                app:layout_constraintBottom_toTopOf="@+id/sehirTVListFragment4"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dereceTVListScreen4" />
+                app:layout_constraintTop_toBottomOf="@+id/dereceTVListFragment4" />
 
             <TextView
-                android:id="@+id/sehirTVListScreen4"
+                android:id="@+id/sehirTVListFragment4"
                 style="@style/medium_20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -333,7 +335,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <ImageView
-                android:id="@+id/sunnyIVListScreen4"
+                android:id="@+id/sunnyIVListFragment4"
                 android:layout_width="@dimen/margin_64dp"
                 android:layout_height="@dimen/margin_64dp"
                 android:layout_marginStart="170dp"
@@ -341,11 +343,11 @@
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:src="@drawable/ic_sunny"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/dereceTVListScreen4"
+                app:layout_constraintStart_toEndOf="@+id/dereceTVListFragment4"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/gunseliTVListScreen4"
+                android:id="@+id/gunseliTVListFragment4"
                 style="@style/medium_16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -355,10 +357,12 @@
                 android:text="@string/hava_durumu"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/sehirTVListScreen4" />
+                app:layout_constraintStart_toEndOf="@+id/sehirTVListFragment4" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
