@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">MobilliumTask2</string>
+    <string name="tarih">01 Nisan 2023</string>
+    <string name="gun">Bugün</string>
+    <string name="sehir">İstanbul</string>
+    <string name="derece">26°</string>
+    <string name="derece_araligi">14°-27°</string>
+    <string name="hava_durumu">Güneşli</string>
+    <string name="ruzgar_hizi">3 km/s</string>
+    <string name="ruzgar">Rüzgar</string>
+    <string name="verileri_guncelle">Verileri Güncelle</string>
+    <string name="sali">Sal,02 Nisan</string>
+    <string name="carsamba">Çar,03 Nisan</string>
+    <string name="persembe">Per,04 Nisan</string>
+    <string name="cuma">Cum,05 Nisan</string>
 </resources>

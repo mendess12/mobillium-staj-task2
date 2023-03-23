@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/refresIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:src="@drawable/refresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sehirTVDetailScreen"
+        style="@style/medium_20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/sehir"
+        android:textColor="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refresIv" />
+
+    <TextView
+        android:id="@+id/gunTVDetailScreen"
+        style="@style/regular_14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gun"
+        android:textColor="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sehirTVDetailScreen" />
+
+    <ImageView
+        android:id="@+id/sunnyIVDetailScreen"
+        android:layout_width="@dimen/margin_64dp"
+        android:layout_height="@dimen/margin_64dp"
+        android:layout_marginTop="@dimen/margin_64dp"
+        android:src="@drawable/ic_sunny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gunTVDetailScreen" />
+
+    <TextView
+        android:id="@+id/derece1TVDetailScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:gravity="center"
+        android:text="@string/derece"
+        android:textColor="@color/purple_700"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sunnyIVDetailScreen" />
+
+    <TextView
+        android:id="@+id/gunseliTVDetailScreen"
+        style="@style/medium_16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/hava_durumu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/derece1TVDetailScreen" />
+
+    <TextView
+        android:id="@+id/ruzgarTVDetailScreen"
+        style="@style/medium_14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:text="@string/ruzgar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gunseliTVDetailScreen" />
+
+    <ImageView
+        android:id="@+id/windIVDetailScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:src="@drawable/ic_wind"
+        app:layout_constraintEnd_toStartOf="@+id/hizTVDetailScren"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ruzgarTVDetailScreen" />
+
+    <TextView
+        android:id="@+id/hizTVDetailScren"
+        style="@style/regular_14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_4dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginEnd="165dp"
+        android:padding="5dp"
+        android:text="@string/ruzgar_hizi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/windIVDetailScreen"
+        app:layout_constraintTop_toBottomOf="@+id/ruzgarTVDetailScreen" />
+
+
+    <TextView
+        android:id="@+id/saliTv"
+        style="@style/regular_14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_24dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/sali"
+        app:layout_constraintBottom_toTopOf="@+id/carsambaTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hizTVDetailScren" />
+
+    <TextView
+        android:id="@+id/carsambaTv"
+        style="@style/regular_14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_24dp"
+        android:text="@string/carsamba"
+        app:layout_constraintBottom_toTopOf="@+id/persembeTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saliTv" />
+
+    <TextView
+        android:id="@+id/persembeTv"
+        style="@style/regular_14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_24dp"
+        android:text="@string/persembe"
+        app:layout_constraintBottom_toTopOf="@+id/cumaTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carsambaTv" />
+
+    <TextView
+        android:id="@+id/cumaTv"
+        style="@style/regular_14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_24dp"
+        android:layout_marginBottom="@dimen/margin_32dp"
+        android:text="@string/cuma"
+        app:layout_constraintBottom_toTopOf="@+id/verileriGuncelle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/persembeTv" />
+
+    <ImageView
+        android:id="@+id/sunny2Iv"
+        android:layout_width="@dimen/margin_24dp"
+        android:layout_height="@dimen/margin_24dp"
+        android:src="@drawable/ic_sunny"
+        app:layout_constraintBottom_toTopOf="@+id/rainIv"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/persembeTv"
+        app:layout_constraintTop_toBottomOf="@+id/cloudIv" />
+
+    <ImageView
+        android:id="@+id/cloudIv"
+        android:layout_width="@dimen/margin_24dp"
+        android:layout_height="@dimen/margin_24dp"
+        android:src="@drawable/ic_cloudy"
+        app:layout_constraintBottom_toTopOf="@+id/sunny2Iv"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/carsambaTv"
+        app:layout_constraintTop_toBottomOf="@+id/sunnyIv" />
+
+    <ImageView
+        android:id="@+id/sunnyIv"
+        android:layout_width="@dimen/margin_24dp"
+        android:layout_height="@dimen/margin_24dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_sunny"
+        app:layout_constraintBottom_toTopOf="@+id/cloudIv"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/saliTv"
+        app:layout_constraintTop_toBottomOf="@+id/hizTVDetailScren" />
+
+    <ImageView
+        android:id="@+id/rainIv"
+        android:layout_width="@dimen/margin_24dp"
+        android:layout_height="@dimen/margin_24dp"
+        android:src="@drawable/ic_rainy"
+        app:layout_constraintBottom_toTopOf="@+id/verileriGuncelle"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/cumaTv"
+        app:layout_constraintTop_toBottomOf="@+id/sunny2Iv" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:text="@string/derece_araligi"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/windIVDetailScreen" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:text="@string/derece_araligi"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:text="@string/derece_araligi"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:layout_marginBottom="@dimen/margin_32dp"
+        android:text="@string/derece_araligi"
+        app:layout_constraintBottom_toTopOf="@+id/verileriGuncelle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/verileriGuncelle"
+        style="@style/medium_14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_24dp"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:layout_marginRight="@dimen/margin_24dp"
+        android:layout_marginBottom="@dimen/margin_32dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/verileri_guncelle"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_700"
+        app:strokeWidth = "1dp"
+        app:cornerRadius = "@dimen/margin_16dp"
+        app:strokeColor = "@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rainIv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
