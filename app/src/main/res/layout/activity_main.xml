@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_200"
@@ -10,24 +9,35 @@
 
 
   <Button
-      android:id="@+id/listButton"
+      android:id="@+id/yol1Button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Go To List "
+      android:text="@string/yol1"
       android:textAllCaps="false"
-      app:layout_constraintBottom_toTopOf="@+id/detailButton"
+      app:layout_constraintBottom_toTopOf="@+id/yol2Button"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
   <Button
-      android:id="@+id/detailButton"
+      android:id="@+id/yol2Button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Go To Detail "
+      android:text="@string/yol2"
+      android:textAllCaps="false"
+      app:layout_constraintBottom_toTopOf="@+id/yol3Button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/yol1Button" />
+
+  <Button
+      android:id="@+id/yol3Button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/yol3"
       android:textAllCaps="false"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/listButton" />
+      app:layout_constraintTop_toBottomOf="@+id/yol2Button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

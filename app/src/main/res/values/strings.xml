@@ -3,6 +3,9 @@
     <string name="tarih">01 Nisan 2023</string>
     <string name="gun">Bugün</string>
     <string name="sehir">İstanbul</string>
+    <string name="ankara">Ankara</string>
+    <string name="sakarya">Sakarya</string>
+    <string name="erzurum">Erzurum</string>
     <string name="derece">26°</string>
     <string name="derece_araligi">14°-27°</string>
     <string name="hava_durumu">Güneşli</string>
@@ -13,4 +16,7 @@
     <string name="carsamba">Çar,03 Nisan</string>
     <string name="persembe">Per,04 Nisan</string>
     <string name="cuma">Cum,05 Nisan</string>
+    <string name="yol1">Birinci Yol</string>
+    <string name="yol2">İkinci Yol</string>
+    <string name="yol3">üçüncü Yol</string>
 </resources>

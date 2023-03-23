@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_200"
-    tools:context=".DetailActivity">
+    tools:context=".birinciyol.DetailActivity">
 
     <ImageView
         android:id="@+id/refresIv"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sunnyIVDetailScreen" />
 
     <TextView
-        android:id="@+id/gunseliTVDetailScreen"
+        android:id="@+id/gunesliTVDetailScreen"
         style="@style/medium_16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
         android:text="@string/ruzgar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gunseliTVDetailScreen" />
+        app:layout_constraintTop_toBottomOf="@+id/gunesliTVDetailScreen" />
 
     <ImageView
         android:id="@+id/windIVDetailScreen"
@@ -164,7 +164,7 @@
         android:layout_height="@dimen/margin_24dp"
         android:src="@drawable/ic_sunny"
         app:layout_constraintBottom_toTopOf="@+id/rainIv"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/dereceAraligi3TVDetailScreen"
         app:layout_constraintStart_toEndOf="@+id/persembeTv"
         app:layout_constraintTop_toBottomOf="@+id/cloudIv" />
 
@@ -174,7 +174,7 @@
         android:layout_height="@dimen/margin_24dp"
         android:src="@drawable/ic_cloudy"
         app:layout_constraintBottom_toTopOf="@+id/sunny2Iv"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/dereceAraligi2TVDetailScreen"
         app:layout_constraintStart_toEndOf="@+id/carsambaTv"
         app:layout_constraintTop_toBottomOf="@+id/sunnyIv" />
 
@@ -185,7 +185,7 @@
         android:layout_marginTop="80dp"
         android:src="@drawable/ic_sunny"
         app:layout_constraintBottom_toTopOf="@+id/cloudIv"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/dereceAraligi1TVDetailScreen"
         app:layout_constraintStart_toEndOf="@+id/saliTv"
         app:layout_constraintTop_toBottomOf="@+id/hizTVDetailScren" />
 
@@ -195,43 +195,43 @@
         android:layout_height="@dimen/margin_24dp"
         android:src="@drawable/ic_rainy"
         app:layout_constraintBottom_toTopOf="@+id/verileriGuncelle"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/dereceAraligi4TVDetailScreen"
         app:layout_constraintStart_toEndOf="@+id/cumaTv"
         app:layout_constraintTop_toBottomOf="@+id/sunny2Iv" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/dereceAraligi1TVDetailScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="@dimen/margin_24dp"
         android:text="@string/derece_araligi"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintBottom_toTopOf="@+id/dereceAraligi2TVDetailScreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/windIVDetailScreen" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/dereceAraligi2TVDetailScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_24dp"
         android:text="@string/derece_araligi"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintBottom_toTopOf="@+id/dereceAraligi3TVDetailScreen"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/dereceAraligi1TVDetailScreen" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/dereceAraligi3TVDetailScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_24dp"
         android:text="@string/derece_araligi"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintBottom_toTopOf="@+id/dereceAraligi4TVDetailScreen"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/dereceAraligi2TVDetailScreen" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/dereceAraligi4TVDetailScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_24dp"
@@ -239,7 +239,7 @@
         android:text="@string/derece_araligi"
         app:layout_constraintBottom_toTopOf="@+id/verileriGuncelle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/dereceAraligi3TVDetailScreen" />
 
     <Button
         android:id="@+id/verileriGuncelle"
