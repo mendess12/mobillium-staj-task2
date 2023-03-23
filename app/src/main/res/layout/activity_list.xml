@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".ListActivity">
+
+    <TextView
+        android:id="@+id/tarihTv"
+        style="@style/medium_20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/tarih"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gunTv"
+        style="@style/regular_14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarihTv" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_150dp"
+        android:layout_margin="@dimen/margin_16dp"
+        app:cardBackgroundColor="@color/list_background"
+        app:cardCornerRadius="@dimen/margin_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gunTv">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dereceTVListScreen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:gravity="center"
+                android:text="@string/derece"
+                android:textColor="@color/purple_700"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dereceAraligiTVListScreen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/derece_araligi"
+                app:layout_constraintBottom_toTopOf="@+id/sehirTVListScreen1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dereceTVListScreen1" />
+
+            <TextView
+                android:id="@+id/sehirTVListScreen1"
+                style="@style/medium_20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/sehir"
+                android:textColor="@color/purple_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/sunnyIVListScreen1"
+                android:layout_width="@dimen/margin_64dp"
+                android:layout_height="@dimen/margin_64dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:src="@drawable/ic_sunny"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dereceTVListScreen1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/gunseliTVListScreen1"
+                style="@style/medium_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/hava_durumu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/sehirTVListScreen1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_150dp"
+        android:layout_margin="@dimen/margin_16dp"
+        app:cardBackgroundColor="@color/list_background"
+        app:cardCornerRadius="@dimen/margin_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dereceTVListScreen2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:gravity="center"
+                android:text="@string/derece"
+                android:textColor="@color/purple_700"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dereceAraligiTVListScreen2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/derece_araligi"
+                app:layout_constraintBottom_toTopOf="@+id/sehirTVListScreen2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dereceTVListScreen2" />
+
+            <TextView
+                android:id="@+id/sehirTVListScreen2"
+                style="@style/medium_20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/sehir"
+                android:textColor="@color/purple_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/sunnyIVListScreen2"
+                android:layout_width="@dimen/margin_64dp"
+                android:layout_height="@dimen/margin_64dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:src="@drawable/ic_sunny"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dereceTVListScreen2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/gunseliTVListScreen2"
+                style="@style/medium_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/hava_durumu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/sehirTVListScreen2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_150dp"
+        android:layout_margin="@dimen/margin_16dp"
+        app:cardBackgroundColor="@color/list_background"
+        app:cardCornerRadius="@dimen/margin_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dereceTVListScreen3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:gravity="center"
+                android:text="@string/derece"
+                android:textColor="@color/purple_700"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dereceAraligiTVListScreen3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/derece_araligi"
+                app:layout_constraintBottom_toTopOf="@+id/sehirTVListScreen3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dereceTVListScreen3" />
+
+            <TextView
+                android:id="@+id/sehirTVListScreen3"
+                style="@style/medium_20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/sehir"
+                android:textColor="@color/purple_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/sunnyIVListScreen3"
+                android:layout_width="@dimen/margin_64dp"
+                android:layout_height="@dimen/margin_64dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:src="@drawable/ic_sunny"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dereceTVListScreen3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/gunseliTVListScreen3"
+                style="@style/medium_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/hava_durumu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/sehirTVListScreen3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_150dp"
+        android:layout_margin="@dimen/margin_16dp"
+        app:cardBackgroundColor="@color/list_background"
+        app:cardCornerRadius="@dimen/margin_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dereceTVListScreen4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:gravity="center"
+                android:text="@string/derece"
+                android:textColor="@color/purple_700"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dereceAraligiTVListScreen4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/derece_araligi"
+                app:layout_constraintBottom_toTopOf="@+id/sehirTVListScreen4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dereceTVListScreen4" />
+
+            <TextView
+                android:id="@+id/sehirTVListScreen4"
+                style="@style/medium_20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/sehir"
+                android:textColor="@color/purple_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/sunnyIVListScreen4"
+                android:layout_width="@dimen/margin_64dp"
+                android:layout_height="@dimen/margin_64dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:src="@drawable/ic_sunny"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dereceTVListScreen4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/gunseliTVListScreen4"
+                style="@style/medium_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/hava_durumu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/sehirTVListScreen4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

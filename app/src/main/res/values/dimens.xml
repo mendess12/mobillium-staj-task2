@@ -7,5 +7,6 @@
     <dimen name="margin_24dp">24dp</dimen>
     <dimen name="margin_32dp">32dp</dimen>
     <dimen name="margin_64dp">64dp</dimen>
+    <dimen name="margin_150dp">150dp</dimen>
 
 </resources>

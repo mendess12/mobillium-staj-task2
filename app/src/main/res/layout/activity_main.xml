@@ -10,12 +10,24 @@
 
 
   <Button
-      android:id="@+id/button"
+      android:id="@+id/listButton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Button"
-      app:layout_constraintBottom_toBottomOf="parent"
+      android:text="Go To List "
+      android:textAllCaps="false"
+      app:layout_constraintBottom_toTopOf="@+id/detailButton"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/detailButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Go To Detail "
+      android:textAllCaps="false"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/listButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
