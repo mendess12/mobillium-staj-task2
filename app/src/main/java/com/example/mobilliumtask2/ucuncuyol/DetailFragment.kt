@@ -5,14 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.fragment.app.setFragmentResult
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.mobilliumtask2.R
 import com.example.mobilliumtask2.databinding.FragmentDetailBinding
+import kotlin.random.Random
 
 class DetailFragment : Fragment() {
 
     private lateinit var binding : FragmentDetailBinding
     val args : DetailFragmentArgs by navArgs()
+    var randomDerece = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +38,8 @@ class DetailFragment : Fragment() {
         val derece = args.derece
         val dereceAraligi = args.dereceAraligi
         val gunesli = args.gunesli
+        var uuidDetail = args.uuid
+        println(uuidDetail)
         binding.sehirTVDetailFragment.text = sehir
         binding.derece1TVDetailFragment.text = derece
         binding.dereceAraligi1TVDetailFragment.text = dereceAraligi
@@ -40,5 +47,19 @@ class DetailFragment : Fragment() {
         binding.dereceAraligi3TVDetailFragment.text = dereceAraligi
         binding.dereceAraligi4TVDetailFragment.text = dereceAraligi
         binding.gunesliTVDetailFragment.text = gunesli
+
+
+        binding.refresIvDetailFragment.setOnClickListener {
+            randomDerece = Random.nextInt(14,27)
+            println(randomDerece)
+            binding.derece1TVDetailFragment.text = randomDerece.toString()
+        }
+
+        binding.verileriGuncelleFragment.setOnClickListener {
+            val result = randomDerece.toString()
+            setFragmentResult("requestKey", bundleOf("bundleKey" to result))
+            val action = DetailFragmentDirections.actionDetailFragmentToListFragment(uuidDetail)
+            findNavController().navigate(action)
+        }
     }
 }
