@@ -1,4 +1,4 @@
-package com.example.mobilliumtask2.ikinciyol
+package com.example.mobilliumtask2.ucuncuyol
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

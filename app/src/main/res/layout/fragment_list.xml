@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_200"
-    tools:context=".ikinciyol.ListFragment">
+    tools:context=".ucuncuyol.ListFragment">
 
 
     <TextView
@@ -270,7 +270,7 @@
                 android:layout_marginStart="200dp"
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
-                android:text="@string/sakarya"
+                android:text="@string/hava_durumu"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/sehirTVListFragment3" />
