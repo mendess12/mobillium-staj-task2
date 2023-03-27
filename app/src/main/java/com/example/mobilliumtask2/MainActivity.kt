@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mobilliumtask2.birinciyol.ListActivity
 import com.example.mobilliumtask2.databinding.ActivityMainBinding
+import com.example.mobilliumtask2.ikinciyol.MainActivity3
 import com.example.mobilliumtask2.ucuncuyol.MainActivity2
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +20,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.yol1Button.setOnClickListener {
             val intent = Intent(this, ListActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.yol2Button.setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
             startActivity(intent)
         }
 

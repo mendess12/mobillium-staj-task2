@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/listFragment2">
+
+    <fragment
+        android:id="@+id/listFragment2"
+        android:name="com.example.mobilliumtask2.ikinciyol.ListFragment2"
+        android:label="fragment_list2"
+        tools:layout="@layout/fragment_list2" >
+        <action
+            android:id="@+id/action_listFragment2_to_detailFragment2"
+            app:destination="@id/detailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment2"
+        android:name="com.example.mobilliumtask2.ikinciyol.DetailFragment2"
+        android:label="fragment_detail2"
+        tools:layout="@layout/fragment_detail2" />
+</navigation>
