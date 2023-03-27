@@ -35,8 +35,6 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentListBinding.bind(view)
 
-
-
         binding.cardView1ListFragment.setOnClickListener {
             sehir = binding.sehirTVListFragment1.text.toString()
             derece = binding.dereceTVListFragment1.text.toString()
@@ -89,6 +87,5 @@ class ListFragment : Fragment() {
             true
             println(result)
         }
-
     }
 }

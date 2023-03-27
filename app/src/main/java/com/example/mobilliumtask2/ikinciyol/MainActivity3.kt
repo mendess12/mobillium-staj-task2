@@ -8,7 +8,7 @@ import com.example.mobilliumtask2.R
 import com.example.mobilliumtask2.databinding.ActivityMain3Binding
 
 class MainActivity3 : AppCompatActivity() {
-    private lateinit var binding : ActivityMain3Binding
+    private lateinit var binding: ActivityMain3Binding
     private lateinit var navigationController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,9 +16,8 @@ class MainActivity3 : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        navigationController = Navigation.findNavController(this,R.id.fragment2)
+        navigationController = Navigation.findNavController(this, R.id.fragment2)
         navigationController.navigateUp()
-
 
     }
 }

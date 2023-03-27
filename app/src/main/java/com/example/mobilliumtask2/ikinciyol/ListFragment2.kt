@@ -9,7 +9,7 @@ import com.example.mobilliumtask2.R
 import com.example.mobilliumtask2.databinding.FragmentList2Binding
 
 class ListFragment2 : Fragment() {
-    private lateinit var binding : FragmentList2Binding
+    private lateinit var binding: FragmentList2Binding
     var sehir: String = ""
     var derece: String = ""
     var dereceAraligi: String = ""
@@ -37,14 +37,13 @@ class ListFragment2 : Fragment() {
             gunesli = binding.gunseliTVListFragment1.text.toString()
 
             val bundle = Bundle()
-            bundle.putString("sehir",sehir)
-            bundle.putString("derece",derece)
-            bundle.putString("dereceAraligi",dereceAraligi)
-            bundle.putString("gunesli",gunesli)
+            bundle.putString("sehir", sehir)
+            bundle.putString("derece", derece)
+            bundle.putString("dereceAraligi", dereceAraligi)
+            bundle.putString("gunesli", gunesli)
             val fragment = DetailFragment2()
             fragment.arguments = bundle
-            fragmentManager?.beginTransaction()?.replace(R.id.fragment2,fragment)?.commit()
-
+            fragmentManager?.beginTransaction()?.replace(R.id.fragment2, fragment)?.commit()
         }
 
         binding.cardView2ListFragment.setOnClickListener {
@@ -54,14 +53,13 @@ class ListFragment2 : Fragment() {
             gunesli = binding.gunseliTVListFragment2.text.toString()
 
             val bundle = Bundle()
-            bundle.putString("sehir",sehir)
-            bundle.putString("derece",derece)
-            bundle.putString("dereceAraligi",dereceAraligi)
-            bundle.putString("gunesli",gunesli)
+            bundle.putString("sehir", sehir)
+            bundle.putString("derece", derece)
+            bundle.putString("dereceAraligi", dereceAraligi)
+            bundle.putString("gunesli", gunesli)
             val fragment = DetailFragment2()
             fragment.arguments = bundle
-            fragmentManager?.beginTransaction()?.replace(R.id.fragment2,fragment)?.commit()
-
+            fragmentManager?.beginTransaction()?.replace(R.id.fragment2, fragment)?.commit()
         }
 
         binding.cardView3ListFragment.setOnClickListener {
@@ -71,14 +69,13 @@ class ListFragment2 : Fragment() {
             gunesli = binding.gunseliTVListFragment3.text.toString()
 
             val bundle = Bundle()
-            bundle.putString("sehir",sehir)
-            bundle.putString("derece",derece)
-            bundle.putString("dereceAraligi",dereceAraligi)
-            bundle.putString("gunesli",gunesli)
+            bundle.putString("sehir", sehir)
+            bundle.putString("derece", derece)
+            bundle.putString("dereceAraligi", dereceAraligi)
+            bundle.putString("gunesli", gunesli)
             val fragment = DetailFragment2()
             fragment.arguments = bundle
-            fragmentManager?.beginTransaction()?.replace(R.id.fragment2,fragment)?.commit()
-
+            fragmentManager?.beginTransaction()?.replace(R.id.fragment2, fragment)?.commit()
         }
 
         binding.cardView4ListFragment.setOnClickListener {
@@ -88,15 +85,13 @@ class ListFragment2 : Fragment() {
             gunesli = binding.gunseliTVListFragment4.text.toString()
 
             val bundle = Bundle()
-            bundle.putString("sehir",sehir)
-            bundle.putString("derece",derece)
-            bundle.putString("dereceAraligi",dereceAraligi)
-            bundle.putString("gunesli",gunesli)
+            bundle.putString("sehir", sehir)
+            bundle.putString("derece", derece)
+            bundle.putString("dereceAraligi", dereceAraligi)
+            bundle.putString("gunesli", gunesli)
             val fragment = DetailFragment2()
             fragment.arguments = bundle
-            fragmentManager?.beginTransaction()?.replace(R.id.fragment2,fragment)?.commit()
-
+            fragmentManager?.beginTransaction()?.replace(R.id.fragment2, fragment)?.commit()
         }
     }
-
 }

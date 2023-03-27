@@ -9,7 +9,7 @@ import com.example.mobilliumtask2.R
 import com.example.mobilliumtask2.databinding.FragmentDetail2Binding
 
 class DetailFragment2 : Fragment() {
-    private lateinit var binding : FragmentDetail2Binding
+    private lateinit var binding: FragmentDetail2Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -40,5 +40,4 @@ class DetailFragment2 : Fragment() {
         binding.gunesliTVDetailFragment.text = gunesli
 
     }
-
 }

@@ -81,6 +81,5 @@ class ListActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
     }
 }

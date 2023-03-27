@@ -15,10 +15,9 @@ import kotlin.random.Random
 
 class DetailFragment : Fragment() {
 
-    private lateinit var binding : FragmentDetailBinding
-    val args : DetailFragmentArgs by navArgs()
+    private lateinit var binding: FragmentDetailBinding
+    val args: DetailFragmentArgs by navArgs()
     var randomDerece = 0
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -50,7 +49,7 @@ class DetailFragment : Fragment() {
 
 
         binding.refresIvDetailFragment.setOnClickListener {
-            randomDerece = Random.nextInt(14,27)
+            randomDerece = Random.nextInt(14, 27)
             println(randomDerece)
             binding.derece1TVDetailFragment.text = randomDerece.toString()
         }

@@ -52,7 +52,7 @@
                 android:gravity="center"
                 android:text="@string/derece"
                 android:textColor="@color/purple_700"
-                android:textSize="64sp"
+                android:textSize="@dimen/margin_64sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -81,12 +81,11 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-
             <ImageView
                 android:id="@+id/sunnyIVListScreen1"
                 android:layout_width="@dimen/margin_64dp"
                 android:layout_height="@dimen/margin_64dp"
-                android:layout_marginStart="170dp"
+                android:layout_marginStart="@dimen/margin_170dp"
                 android:layout_marginTop="@dimen/margin_16dp"
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:src="@drawable/ic_sunny"
@@ -99,7 +98,7 @@
                 style="@style/medium_16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="200dp"
+                android:layout_marginStart="@dimen/margin_200dp"
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
                 android:text="@string/hava_durumu"
@@ -110,6 +109,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
@@ -134,7 +134,7 @@
                 android:gravity="center"
                 android:text="@string/derece"
                 android:textColor="@color/purple_700"
-                android:textSize="64sp"
+                android:textSize="@dimen/margin_64sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -163,12 +163,11 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-
             <ImageView
                 android:id="@+id/sunnyIVListScreen2"
                 android:layout_width="@dimen/margin_64dp"
                 android:layout_height="@dimen/margin_64dp"
-                android:layout_marginStart="170dp"
+                android:layout_marginStart="@dimen/margin_170dp"
                 android:layout_marginTop="@dimen/margin_16dp"
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:src="@drawable/ic_sunny"
@@ -181,7 +180,7 @@
                 style="@style/medium_16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="200dp"
+                android:layout_marginStart="@dimen/margin_200dp"
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
                 android:text="@string/hava_durumu"
@@ -189,11 +188,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/sehirTVListScreen2" />
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
@@ -218,7 +216,7 @@
                 android:gravity="center"
                 android:text="@string/derece"
                 android:textColor="@color/purple_700"
-                android:textSize="64sp"
+                android:textSize="@dimen/margin_64sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen3"
                 app:layout_constraintStart_toStartOf="parent"
@@ -247,12 +245,11 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-
             <ImageView
                 android:id="@+id/sunnyIVListScreen3"
                 android:layout_width="@dimen/margin_64dp"
                 android:layout_height="@dimen/margin_64dp"
-                android:layout_marginStart="170dp"
+                android:layout_marginStart="@dimen/margin_170dp"
                 android:layout_marginTop="@dimen/margin_16dp"
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:src="@drawable/ic_sunny"
@@ -265,7 +262,7 @@
                 style="@style/medium_16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="200dp"
+                android:layout_marginStart="@dimen/margin_200dp"
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
                 android:text="@string/sakarya"
@@ -273,9 +270,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/sehirTVListScreen3" />
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     </androidx.cardview.widget.CardView>
 
@@ -303,7 +298,7 @@
                 android:gravity="center"
                 android:text="@string/derece"
                 android:textColor="@color/purple_700"
-                android:textSize="64sp"
+                android:textSize="@dimen/margin_64sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/dereceAraligiTVListScreen4"
                 app:layout_constraintStart_toStartOf="parent"
@@ -336,7 +331,7 @@
                 android:id="@+id/sunnyIVListScreen4"
                 android:layout_width="@dimen/margin_64dp"
                 android:layout_height="@dimen/margin_64dp"
-                android:layout_marginStart="170dp"
+                android:layout_marginStart="@dimen/margin_170dp"
                 android:layout_marginTop="@dimen/margin_16dp"
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:src="@drawable/ic_sunny"
@@ -349,7 +344,7 @@
                 style="@style/medium_16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="200dp"
+                android:layout_marginStart="@dimen/margin_200dp"
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
                 android:text="@string/hava_durumu"

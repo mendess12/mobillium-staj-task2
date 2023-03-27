@@ -11,7 +11,6 @@ import com.example.mobilliumtask2.ucuncuyol.MainActivity2
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -29,9 +28,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.yol3Button.setOnClickListener {
-            val intent = Intent(this,MainActivity2::class.java)
+            val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
-
     }
 }

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -59,7 +58,7 @@
         android:gravity="center"
         android:text="@string/derece"
         android:textColor="@color/purple_700"
-        android:textSize="64sp"
+        android:textSize="@dimen/margin_64sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +90,7 @@
         android:id="@+id/windIVDetailFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="165dp"
+        android:layout_marginStart="@dimen/margin_165dp"
         android:layout_marginTop="@dimen/margin_8dp"
         android:src="@drawable/ic_wind"
         app:layout_constraintEnd_toStartOf="@+id/hizTVDetailFragment"
@@ -105,13 +104,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_4dp"
         android:layout_marginTop="@dimen/margin_8dp"
-        android:layout_marginEnd="165dp"
-        android:padding="5dp"
+        android:layout_marginEnd="@dimen/margin_165dp"
+        android:padding="@dimen/margin_5dp"
         android:text="@string/ruzgar_hizi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/windIVDetailFragment"
         app:layout_constraintTop_toBottomOf="@+id/ruzgarTVDetailFragment" />
-
 
     <TextView
         android:id="@+id/saliTvFragment"
@@ -119,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_24dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="@dimen/margin_80dp"
         android:text="@string/sali"
         app:layout_constraintBottom_toTopOf="@+id/carsambaTvFragment"
         app:layout_constraintStart_toStartOf="parent"
@@ -204,7 +202,7 @@
         android:id="@+id/dereceAraligi1TVDetailFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="@dimen/margin_80dp"
         android:layout_marginEnd="@dimen/margin_24dp"
         android:text="@string/derece_araligi"
         app:layout_constraintBottom_toTopOf="@+id/dereceAraligi2TVDetailFragment"
@@ -255,12 +253,12 @@
         android:text="@string/verileri_guncelle"
         android:textAllCaps="false"
         android:textColor="@color/purple_700"
-        app:strokeWidth = "1dp"
-        app:cornerRadius = "@dimen/margin_16dp"
-        app:strokeColor = "@color/purple_500"
+        app:cornerRadius="@dimen/margin_16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rainIvFragment" />
+        app:layout_constraintTop_toBottomOf="@+id/rainIvFragment"
+        app:strokeColor="@color/purple_500"
+        app:strokeWidth="@dimen/margin_1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
