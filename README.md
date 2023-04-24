@@ -1,26 +1,53 @@
 # mobillium-staj-task2
 
-#### Main Activity 
+### Konu 
+<pre> Liste ve detay ekranları arasında veri paslayarak navigasyon/geçiş yapma </pre>
 
-![main-activity](https://user-images.githubusercontent.com/76566952/227863966-95c3e4b3-385f-49c3-9df3-07e567a5f5f8.png)
+Navigasyon için 3 farklı yolu uygulanacak.<br><br>
+1- Activity - Activity arasında navigasyon ve veri paslama<br>
+2- Fragment - Fragment arasında navigasyon ve veri paslama<br>
+3- Navigation Components kullanarak Fragment'lar arası navigasyon ve veri paslama<br>
+4- Fragment Result API ile veri paslama
 
-### 1.yol -> Activity - Activity arasında navigasyon ve veri paslama
+<hr>
 
-![list-activity](https://user-images.githubusercontent.com/76566952/227864220-3089d8c2-fdae-46a3-b0ee-5bd7b3ff461b.png) ![detail-activity](https://user-images.githubusercontent.com/76566952/227864233-0535f1c6-e48f-4f16-8895-fd8105ed6f4e.png)
+### Navigation component dependencies
 
-### 2.yol -> Fragment - Fragment arasında navigasyon ve veri paslama
+<pre>
+- build.gradle (:app)
 
-![list-activity](https://user-images.githubusercontent.com/76566952/227864341-7c5858c0-e017-4d98-9b32-e9e6f4ed8ed8.png) ![ikinci-yol-detail-fragment](https://user-images.githubusercontent.com/76566952/227864402-e4b3c0a1-c6b7-437d-ac44-59ac28e644a5.png)
+dependencies {
+    def nav_version = "2.5.3"
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+}<br>
+plugins{
+ id 'androidx.navigation.safeargs.kotlin'
+ }
+<hr> 
+- build.gradle(project) 
 
-### 3.yol -> Navigation Components kullanarak Fragment'lar arası navigasyon ve veri paslama
+ dependencies {
+        def nav_version = "2.5.3"
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+    }
+</pre>
 
-![list-activity](https://user-images.githubusercontent.com/76566952/227864669-f91b06fe-febb-4bf8-a889-101ee04523e2.png) ![ucuncu-yol-detail-fragment](https://user-images.githubusercontent.com/76566952/227864727-53a9b8d1-766a-44a8-b7be-b62b8b8137c3.png)
+<hr>
 
+### Hedef
 
-#### Refresh buttonu ile derece güncelleme
-![ucuncu-yol-refresh-derece](https://user-images.githubusercontent.com/76566952/227864746-20d9c9c4-e3ac-4371-9c69-e400952c8238.png)
+1- Öncelikle her iki ekranı activity olarak tasarlayıp, ilgili liste item'a tıklanınca detay activity ekranını açılacak. Detay ekranına giderken Liste item'da gördülen tüm dataları da detay ekranına paslayıp, ilgili yerlerde setlenecek. <br>
+2- Sonrasında ayrı bir activity oluşturup, bu activity'ye ait 2 ayrı fragment oluşturulacak: Liste ve Detay. Fragment'lar arasında argument setleyerek ilgili dataları paslayarak, navigasyon tamamlanacak. <br>
+3- Projene navigation component'in ekli olduğundan emin olduktan sonra, ayrı bir activity oluşturulacak. Bu activity altında Liste ve Detay için 2 yeni fragment oluşturulacak. Bir nav graph oluşturulup, kurulumu yapılacak. Navigation component ve SafeArgs kullanarak bu 2 fragment arasında data paslayarak, navigasyon tamamlanacak. <br>
+4- Son olarak, navigation component için oluşturulan fragment'lardan detay ekranında bulunan refresh iconuna tıklanınca, rastgele min-max sıcaklık değerleri arasında bir sayıyı, o günün sıcaklık değerine setlenecek. Setlenen değer, verileri güncelle butonuna basınca Fragment Result API kullanarak Liste fragment'ındaki değeri güncellemek için kullanılacak. Geri geldiğinde atanan son random sıcaklık değeri ilgili item'daki sıcaklık değerine setlenmiş olacak. 
 
-#### * Verileri güncelle buttonu ile listedeki dereceyi güncelleme 
-#### * Fragment Result API ile veri paslama
+<hr>
 
-![ucuncu-yol-liste-guncelle](https://user-images.githubusercontent.com/76566952/227864760-c2557ede-cd8c-4466-bd37-05fef71d6dcd.png)
+### Kaynaklar 
+
+* [Introduction to activities](https://developer.android.com/guide/components/activities/intro-activities)
+* [Create a fragment](https://developer.android.com/guide/fragments/create)
+* [Get started with the Navigation component](https://developer.android.com/guide/navigation/navigation-getting-started)
+* [Learn Jetpack Navigation - Codelab](https://developer.android.com/codelabs/android-navigation)
+* [Get results using the Fragment Result API](https://developer.android.com/guide/fragments/communicate#fragment-result)
