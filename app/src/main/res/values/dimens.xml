@@ -3,17 +3,30 @@
 
     <dimen name="margin_1dp">1dp</dimen>
     <dimen name="margin_4dp">4dp</dimen>
-    <dimen name="margin_5dp">5dp</dimen>
     <dimen name="margin_8dp">8dp</dimen>
     <dimen name="margin_16dp">16dp</dimen>
     <dimen name="margin_24dp">24dp</dimen>
     <dimen name="margin_32dp">32dp</dimen>
     <dimen name="margin_64dp">64dp</dimen>
-    <dimen name="margin_64sp">64sp</dimen>
     <dimen name="margin_80dp">80dp</dimen>
     <dimen name="margin_150dp">150dp</dimen>
     <dimen name="margin_165dp">165dp</dimen>
     <dimen name="margin_170dp">170dp</dimen>
     <dimen name="margin_200dp">200dp</dimen>
+
+    <!-- text size -->
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_64sp">64sp</dimen>
+
+    <!-- line height size -->
+    <dimen name="line_height_size_32sp">32sp</dimen>
+
+    <!-- corner radius size -->
+    <dimen name="corner_radius_size_16dp">16dp</dimen>
+
+    <!-- padding size -->
+    <dimen name="padding_size_5dp">5dp</dimen>
 
 </resources>
