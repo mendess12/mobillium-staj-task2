@@ -7,14 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.mobilliumtask2.R
 import com.example.mobilliumtask2.databinding.FragmentList2Binding
+import com.example.mobilliumtask2.util.WeatherData
 
 class ListFragment2 : Fragment() {
     private lateinit var binding: FragmentList2Binding
-    var sehir: String = ""
-    var derece: String = ""
-    var dereceAraligi: String = ""
-    var gunesli: String = ""
-
+    private val weatherData = WeatherData()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,54 +23,45 @@ class ListFragment2 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentList2Binding.bind(view)
-
-        binding.cardView1ListFragment.setOnClickListener {
-            sehir = binding.sehirTVListFragment1.text.toString()
-            derece = binding.dereceTVListFragment1.text.toString()
-            dereceAraligi = binding.dereceAraligiTVListFragment1.text.toString()
-            gunesli = binding.gunseliTVListFragment1.text.toString()
-
-            val bundle = Bundle()
-            sendDataWithBundle(bundle)
-        }
-
-        binding.cardView2ListFragment.setOnClickListener {
-            sehir = binding.sehirTVListFragment2.text.toString()
-            derece = binding.dereceTVListFragment2.text.toString()
-            dereceAraligi = binding.dereceAraligiTVListFragment2.text.toString()
-            gunesli = binding.gunseliTVListFragment2.text.toString()
-
-            val bundle = Bundle()
-            sendDataWithBundle(bundle)
-        }
-
-        binding.cardView3ListFragment.setOnClickListener {
-            sehir = binding.sehirTVListFragment3.text.toString()
-            derece = binding.dereceTVListFragment3.text.toString()
-            dereceAraligi = binding.dereceAraligiTVListFragment3.text.toString()
-            gunesli = binding.gunseliTVListFragment3.text.toString()
-
-            val bundle = Bundle()
-            sendDataWithBundle(bundle)
-        }
-
-        binding.cardView4ListFragment.setOnClickListener {
-            sehir = binding.sehirTVListFragment4.text.toString()
-            derece = binding.dereceTVListFragment4.text.toString()
-            dereceAraligi = binding.dereceAraligiTVListFragment4.text.toString()
-            gunesli = binding.gunseliTVListFragment4.text.toString()
-
-            val bundle = Bundle()
-            sendDataWithBundle(bundle)
+        binding.apply {
+            cardView1ListFragment.setOnClickListener {
+                weatherData.sehir = binding.sehirTVListFragment1.text.toString()
+                weatherData.derece = binding.dereceTVListFragment1.text.toString()
+                weatherData.dereceAraligi = binding.dereceAraligiTVListFragment1.text.toString()
+                weatherData.gunesli = binding.gunseliTVListFragment1.text.toString()
+                sendDataWithBundle()
+            }
+            cardView2ListFragment.setOnClickListener {
+                weatherData.sehir = binding.sehirTVListFragment2.text.toString()
+                weatherData.derece = binding.dereceTVListFragment2.text.toString()
+                weatherData.dereceAraligi = binding.dereceAraligiTVListFragment2.text.toString()
+                weatherData.gunesli = binding.gunseliTVListFragment2.text.toString()
+                sendDataWithBundle()
+            }
+            cardView3ListFragment.setOnClickListener {
+                weatherData.sehir = binding.sehirTVListFragment3.text.toString()
+                weatherData.derece = binding.dereceTVListFragment3.text.toString()
+                weatherData.dereceAraligi = binding.dereceAraligiTVListFragment3.text.toString()
+                weatherData.gunesli = binding.gunseliTVListFragment3.text.toString()
+                sendDataWithBundle()
+            }
+            cardView4ListFragment.setOnClickListener {
+                weatherData.sehir = binding.sehirTVListFragment4.text.toString()
+                weatherData.derece = binding.dereceTVListFragment4.text.toString()
+                weatherData.dereceAraligi = binding.dereceAraligiTVListFragment4.text.toString()
+                weatherData.gunesli = binding.gunseliTVListFragment4.text.toString()
+                sendDataWithBundle()
+            }
         }
     }
 
-    private fun sendDataWithBundle(bundle: Bundle) {
+    private fun sendDataWithBundle() {
+        val bundle = Bundle()
         bundle.apply {
-            putString("sehir", sehir)
-            putString("derece", derece)
-            putString("dereceAraligi", dereceAraligi)
-            putString("gunesli", gunesli)
+            putString("sehir", weatherData.sehir)
+            putString("derece", weatherData.derece)
+            putString("dereceAraligi", weatherData.dereceAraligi)
+            putString("gunesli", weatherData.gunesli)
         }
         val fragment = DetailFragment2()
         fragment.arguments = bundle
