@@ -10,9 +10,6 @@ import com.example.mobilliumtask2.databinding.FragmentDetail2Binding
 
 class DetailFragment2 : Fragment() {
     private lateinit var binding: FragmentDetail2Binding
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,13 +28,14 @@ class DetailFragment2 : Fragment() {
         val dereceAraligi = args?.getString("dereceAraligi")
         val gunesli = args?.getString("gunesli")
 
-        binding.sehirTVDetailFragment.text = sehir
-        binding.derece1TVDetailFragment.text = derece
-        binding.dereceAraligi1TVDetailFragment.text = dereceAraligi
-        binding.dereceAraligi2TVDetailFragment.text = dereceAraligi
-        binding.dereceAraligi3TVDetailFragment.text = dereceAraligi
-        binding.dereceAraligi4TVDetailFragment.text = dereceAraligi
-        binding.gunesliTVDetailFragment.text = gunesli
-
+        binding.apply {
+            sehirTVDetailFragment.text = sehir
+            derece1TVDetailFragment.text = derece
+            dereceAraligi1TVDetailFragment.text = dereceAraligi
+            dereceAraligi2TVDetailFragment.text = dereceAraligi
+            dereceAraligi3TVDetailFragment.text = dereceAraligi
+            dereceAraligi4TVDetailFragment.text = dereceAraligi
+            gunesliTVDetailFragment.text = gunesli
+        }
     }
 }

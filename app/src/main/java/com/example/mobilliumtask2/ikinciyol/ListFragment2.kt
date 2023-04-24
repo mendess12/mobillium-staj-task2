@@ -14,9 +14,6 @@ class ListFragment2 : Fragment() {
     var derece: String = ""
     var dereceAraligi: String = ""
     var gunesli: String = ""
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,13 +34,7 @@ class ListFragment2 : Fragment() {
             gunesli = binding.gunseliTVListFragment1.text.toString()
 
             val bundle = Bundle()
-            bundle.putString("sehir", sehir)
-            bundle.putString("derece", derece)
-            bundle.putString("dereceAraligi", dereceAraligi)
-            bundle.putString("gunesli", gunesli)
-            val fragment = DetailFragment2()
-            fragment.arguments = bundle
-            fragmentManager?.beginTransaction()?.replace(R.id.fragment2, fragment)?.commit()
+            sendDataWithBundle(bundle)
         }
 
         binding.cardView2ListFragment.setOnClickListener {
@@ -53,13 +44,7 @@ class ListFragment2 : Fragment() {
             gunesli = binding.gunseliTVListFragment2.text.toString()
 
             val bundle = Bundle()
-            bundle.putString("sehir", sehir)
-            bundle.putString("derece", derece)
-            bundle.putString("dereceAraligi", dereceAraligi)
-            bundle.putString("gunesli", gunesli)
-            val fragment = DetailFragment2()
-            fragment.arguments = bundle
-            fragmentManager?.beginTransaction()?.replace(R.id.fragment2, fragment)?.commit()
+            sendDataWithBundle(bundle)
         }
 
         binding.cardView3ListFragment.setOnClickListener {
@@ -69,13 +54,7 @@ class ListFragment2 : Fragment() {
             gunesli = binding.gunseliTVListFragment3.text.toString()
 
             val bundle = Bundle()
-            bundle.putString("sehir", sehir)
-            bundle.putString("derece", derece)
-            bundle.putString("dereceAraligi", dereceAraligi)
-            bundle.putString("gunesli", gunesli)
-            val fragment = DetailFragment2()
-            fragment.arguments = bundle
-            fragmentManager?.beginTransaction()?.replace(R.id.fragment2, fragment)?.commit()
+            sendDataWithBundle(bundle)
         }
 
         binding.cardView4ListFragment.setOnClickListener {
@@ -85,13 +64,20 @@ class ListFragment2 : Fragment() {
             gunesli = binding.gunseliTVListFragment4.text.toString()
 
             val bundle = Bundle()
-            bundle.putString("sehir", sehir)
-            bundle.putString("derece", derece)
-            bundle.putString("dereceAraligi", dereceAraligi)
-            bundle.putString("gunesli", gunesli)
-            val fragment = DetailFragment2()
-            fragment.arguments = bundle
-            fragmentManager?.beginTransaction()?.replace(R.id.fragment2, fragment)?.commit()
+            sendDataWithBundle(bundle)
         }
+    }
+
+    private fun sendDataWithBundle(bundle: Bundle) {
+        bundle.apply {
+            putString("sehir", sehir)
+            putString("derece", derece)
+            putString("dereceAraligi", dereceAraligi)
+            putString("gunesli", gunesli)
+        }
+        val fragment = DetailFragment2()
+        fragment.arguments = bundle
+        fragmentManager?.beginTransaction()?.replace(R.id.fragment2, fragment)?.commit()
+
     }
 }

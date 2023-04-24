@@ -17,7 +17,6 @@ class MainActivity3 : AppCompatActivity() {
         setContentView(view)
 
         navigationController = Navigation.findNavController(this, R.id.fragment2)
-        navigationController.navigateUp()
 
     }
 }
