@@ -8,7 +8,7 @@
     tools:context=".ikinciyol.DetailFragment2">
 
     <ImageView
-        android:id="@+id/refresIvDetailFragment"
+        android:id="@+id/refreshIvDetailFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_16dp"
@@ -27,7 +27,7 @@
         android:textColor="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/refresIvDetailFragment" />
+        app:layout_constraintTop_toBottomOf="@+id/refreshIvDetailFragment" />
 
     <TextView
         android:id="@+id/gunTVDetailFragment"

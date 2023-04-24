@@ -265,7 +265,7 @@
                 android:layout_marginStart="@dimen/margin_200dp"
                 android:layout_marginEnd="@dimen/margin_16dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
-                android:text="@string/sakarya"
+                android:text="@string/hava_durumu"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/sehirTVListScreen3" />

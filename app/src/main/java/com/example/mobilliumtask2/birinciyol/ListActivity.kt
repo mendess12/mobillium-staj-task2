@@ -25,11 +25,7 @@ class ListActivity : AppCompatActivity() {
             gunesli = binding.gunseliTVListScreen1.text.toString()
 
             val intent = Intent(this, DetailActivity::class.java)
-
-            intent.putExtra("derece", derece)
-            intent.putExtra("sehir", sehir)
-            intent.putExtra("dereceAraligi", dereceAraligi)
-            intent.putExtra("gunesli", gunesli)
+            sendDataWithIntent(intent)
             startActivity(intent)
         }
 
@@ -41,11 +37,7 @@ class ListActivity : AppCompatActivity() {
             gunesli = binding.gunseliTVListScreen2.text.toString()
 
             val intent = Intent(this, DetailActivity::class.java)
-
-            intent.putExtra("derece", derece)
-            intent.putExtra("sehir", sehir)
-            intent.putExtra("dereceAraligi", dereceAraligi)
-            intent.putExtra("gunesli", gunesli)
+            sendDataWithIntent(intent)
             startActivity(intent)
         }
 
@@ -57,11 +49,7 @@ class ListActivity : AppCompatActivity() {
             gunesli = binding.gunseliTVListScreen3.text.toString()
 
             val intent = Intent(this, DetailActivity::class.java)
-
-            intent.putExtra("derece", derece)
-            intent.putExtra("sehir", sehir)
-            intent.putExtra("dereceAraligi", dereceAraligi)
-            intent.putExtra("gunesli", gunesli)
+            sendDataWithIntent(intent)
             startActivity(intent)
         }
 
@@ -73,13 +61,18 @@ class ListActivity : AppCompatActivity() {
             gunesli = binding.gunseliTVListScreen4.text.toString()
 
             val intent = Intent(this, DetailActivity::class.java)
-
-            intent.putExtra("derece", derece)
-            intent.putExtra("sehir", sehir)
-            intent.putExtra("dereceAraligi", dereceAraligi)
-            intent.putExtra("gunesli", gunesli)
+            sendDataWithIntent(intent)
             startActivity(intent)
         }
 
+    }
+
+    private fun sendDataWithIntent(intent: Intent) {
+        intent.apply {
+            putExtra("derece", derece)
+            putExtra("sehir", sehir)
+            putExtra("dereceAraligi", dereceAraligi)
+            putExtra("gunesli", gunesli)
+        }
     }
 }
