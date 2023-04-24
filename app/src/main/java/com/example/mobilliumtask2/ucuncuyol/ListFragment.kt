@@ -13,15 +13,12 @@ import com.example.mobilliumtask2.databinding.FragmentListBinding
 
 class ListFragment : Fragment() {
     private lateinit var binding: FragmentListBinding
-    val args : ListFragmentArgs by navArgs()
+    val args: ListFragmentArgs by navArgs()
     var sehir: String = ""
     var derece: String = ""
     var dereceAraligi: String = ""
     var gunesli: String = ""
-    var uuid : Int = 1
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    var uuid: Int = 1
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,8 +38,7 @@ class ListFragment : Fragment() {
             dereceAraligi = binding.dereceAraligiTVListFragment1.text.toString()
             gunesli = binding.gunseliTVListFragment1.text.toString()
             uuid = 1
-            val action = ListFragmentDirections.actionListFragmentToDetailFragment(sehir,derece,dereceAraligi,gunesli,uuid)
-            findNavController().navigate(action)
+            action()
         }
 
         binding.cardView2ListFragment.setOnClickListener {
@@ -51,8 +47,7 @@ class ListFragment : Fragment() {
             dereceAraligi = binding.dereceAraligiTVListFragment2.text.toString()
             gunesli = binding.gunseliTVListFragment2.text.toString()
             uuid = 2
-            val action = ListFragmentDirections.actionListFragmentToDetailFragment(sehir,derece,dereceAraligi,gunesli,uuid)
-            findNavController().navigate(action)
+            action()
         }
 
         binding.cardView3ListFragment.setOnClickListener {
@@ -60,9 +55,8 @@ class ListFragment : Fragment() {
             derece = binding.dereceTVListFragment3.text.toString()
             dereceAraligi = binding.dereceAraligiTVListFragment3.text.toString()
             gunesli = binding.gunseliTVListFragment3.text.toString()
-            uuid=3
-            val action = ListFragmentDirections.actionListFragmentToDetailFragment(sehir,derece,dereceAraligi,gunesli,uuid)
-            findNavController().navigate(action)
+            uuid = 3
+            action()
         }
 
         binding.cardView4ListFragment.setOnClickListener {
@@ -70,15 +64,15 @@ class ListFragment : Fragment() {
             derece = binding.dereceTVListFragment4.text.toString()
             dereceAraligi = binding.dereceAraligiTVListFragment4.text.toString()
             gunesli = binding.gunseliTVListFragment4.text.toString()
-            uuid=4
-            val action = ListFragmentDirections.actionListFragmentToDetailFragment(sehir,derece,dereceAraligi,gunesli,uuid)
-            findNavController().navigate(action)
+            uuid = 4
+            action()
         }
 
-        setFragmentResultListener("requestKey"){ requestKey, bundle ->
+        // _ = request key
+        setFragmentResultListener("requestKey") { _, bundle ->
             val result = bundle.getString("bundleKey")
             println("islem ici : " + args.uuidList)
-            when(args.uuidList){
+            when (args.uuidList) {
                 1 -> binding.dereceTVListFragment1.text = result
                 2 -> binding.dereceTVListFragment2.text = result
                 3 -> binding.dereceTVListFragment3.text = result
@@ -87,5 +81,16 @@ class ListFragment : Fragment() {
             true
             println(result)
         }
+    }
+
+    private fun action() {
+        val action = ListFragmentDirections.actionListFragmentToDetailFragment(
+            sehir,
+            derece,
+            dereceAraligi,
+            gunesli,
+            uuid
+        )
+        findNavController().navigate(action)
     }
 }

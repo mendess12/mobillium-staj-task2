@@ -37,16 +37,18 @@ class DetailFragment : Fragment() {
         val derece = args.derece
         val dereceAraligi = args.dereceAraligi
         val gunesli = args.gunesli
-        var uuidDetail = args.uuid
+        val uuidDetail = args.uuid
         println(uuidDetail)
-        binding.sehirTVDetailFragment.text = sehir
-        binding.derece1TVDetailFragment.text = derece
-        binding.dereceAraligi1TVDetailFragment.text = dereceAraligi
-        binding.dereceAraligi2TVDetailFragment.text = dereceAraligi
-        binding.dereceAraligi3TVDetailFragment.text = dereceAraligi
-        binding.dereceAraligi4TVDetailFragment.text = dereceAraligi
-        binding.gunesliTVDetailFragment.text = gunesli
 
+        binding.apply {
+            sehirTVDetailFragment.text = sehir
+            derece1TVDetailFragment.text = derece
+            dereceAraligi1TVDetailFragment.text = dereceAraligi
+            dereceAraligi2TVDetailFragment.text = dereceAraligi
+            dereceAraligi3TVDetailFragment.text = dereceAraligi
+            dereceAraligi3TVDetailFragment.text = dereceAraligi
+            gunesliTVDetailFragment.text = gunesli
+        }
 
         binding.refresIvDetailFragment.setOnClickListener {
             randomDerece = Random.nextInt(14, 27)
