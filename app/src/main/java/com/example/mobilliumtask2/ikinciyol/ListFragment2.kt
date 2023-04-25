@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentTransaction
 import com.example.mobilliumtask2.R
 import com.example.mobilliumtask2.databinding.FragmentList2Binding
 import com.example.mobilliumtask2.util.WeatherData
@@ -65,7 +66,11 @@ class ListFragment2 : Fragment() {
         }
         val fragment = DetailFragment2()
         fragment.arguments = bundle
-        fragmentManager?.beginTransaction()?.replace(R.id.fragment2, fragment)?.commit()
-
+        parentFragmentManager.beginTransaction().apply {
+            replace(R.id.fragment2, fragment)
+            addToBackStack(null)
+            setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+            commit()
+        }
     }
 }
