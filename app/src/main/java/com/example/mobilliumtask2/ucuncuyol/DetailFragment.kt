@@ -16,11 +16,8 @@ import kotlin.random.Random
 class DetailFragment : Fragment() {
 
     private lateinit var binding: FragmentDetailBinding
-    val args: DetailFragmentArgs by navArgs()
-    var randomDerece = 0
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    private val args: DetailFragmentArgs by navArgs()
+    private var randomDerece = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

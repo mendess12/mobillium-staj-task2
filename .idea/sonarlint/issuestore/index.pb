@@ -7,7 +7,9 @@ P
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 w
 Gapp/src/main/java/com/example/mobilliumtask2/ikinciyol/MainActivity3.kt,7\0\7073574301fe1bc835bbe9f1f079f8d29acf43a8
+y
+Iapp/src/main/java/com/example/mobilliumtask2/birinciyol/DetailActivity.kt,0\f\0f803b102b386d0b963d5e91084b3bdde3d5d368
 w
-Gapp/src/main/java/com/example/mobilliumtask2/ucuncuyol/MainActivity2.kt,f\b\fbe4595ac0d57252b71d6532532fff3980cad071
-x
-Happ/src/main/java/com/example/mobilliumtask2/ucuncuyol/DetailFragment.kt,e\a\eac7e551a29d7f75ea8454dc67b6495ab73872d4
+Gapp/src/main/java/com/example/mobilliumtask2/birinciyol/ListActivity.kt,8\c\8ccc1192531e8e081b140f560ce8b81b336e3790
+p
+@app/src/main/java/com/example/mobilliumtask2/util/WeatherData.kt,d\1\d18d5c66b6a5ad975766a9da29ca82764a21c342
