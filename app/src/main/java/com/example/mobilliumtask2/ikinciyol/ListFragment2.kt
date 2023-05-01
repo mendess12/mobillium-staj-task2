@@ -11,19 +11,21 @@ import com.example.mobilliumtask2.databinding.FragmentList2Binding
 import com.example.mobilliumtask2.util.WeatherData
 
 class ListFragment2 : Fragment() {
+
     private lateinit var binding: FragmentList2Binding
     private val weatherData = WeatherData()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_list2, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentList2Binding.bind(view)
+
         binding.apply {
             cardView1ListFragment.setOnClickListener {
                 weatherData.sehir = binding.sehirTVListFragment1.text.toString()
@@ -64,6 +66,7 @@ class ListFragment2 : Fragment() {
             putString("dereceAraligi", weatherData.dereceAraligi)
             putString("gunesli", weatherData.gunesli)
         }
+
         val fragment = DetailFragment2()
         fragment.arguments = bundle
         parentFragmentManager.beginTransaction().apply {

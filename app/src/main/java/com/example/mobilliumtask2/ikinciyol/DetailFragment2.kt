@@ -9,19 +9,20 @@ import com.example.mobilliumtask2.R
 import com.example.mobilliumtask2.databinding.FragmentDetail2Binding
 
 class DetailFragment2 : Fragment() {
+
     private lateinit var binding: FragmentDetail2Binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_detail2, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentDetail2Binding.bind(view)
+
         val args = this.arguments
         val sehir = args?.getString("sehir")
         val derece = args?.getString("derece")
