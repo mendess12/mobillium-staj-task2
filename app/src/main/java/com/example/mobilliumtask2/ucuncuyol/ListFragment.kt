@@ -1,6 +1,7 @@
 package com.example.mobilliumtask2.ucuncuyol
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +14,7 @@ import com.example.mobilliumtask2.databinding.FragmentListBinding
 import com.example.mobilliumtask2.util.WeatherData
 
 class ListFragment : Fragment() {
+
     private lateinit var binding: FragmentListBinding
     private val weatherData = WeatherData()
     val args: ListFragmentArgs by navArgs()
@@ -22,13 +24,13 @@ class ListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentListBinding.bind(view)
+
         binding.apply {
             cardView1ListFragment.setOnClickListener {
                 weatherData.sehir = binding.sehirTVListFragment1.text.toString()
@@ -67,7 +69,7 @@ class ListFragment : Fragment() {
         // _ = request key
         setFragmentResultListener("requestKey") { _, bundle ->
             val result = bundle.getString("bundleKey")
-            println("islem ici : " + args.uuidList)
+            Log.d("IN FUNCTION", args.uuidList.toString())
             when (args.uuidList) {
                 1 -> binding.dereceTVListFragment1.text = result
                 2 -> binding.dereceTVListFragment2.text = result
@@ -75,7 +77,7 @@ class ListFragment : Fragment() {
                 4 -> binding.dereceTVListFragment4.text = result
             }
             true
-            println(result)
+            Log.d("RESULT", result.toString())
         }
     }
 

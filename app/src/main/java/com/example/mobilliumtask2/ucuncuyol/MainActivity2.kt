@@ -8,6 +8,7 @@ import com.example.mobilliumtask2.R
 import com.example.mobilliumtask2.databinding.ActivityMain2Binding
 
 class MainActivity2 : AppCompatActivity() {
+
     private lateinit var binding: ActivityMain2Binding
     private lateinit var navigationController: NavController
 
@@ -18,6 +19,5 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(view)
 
         navigationController = Navigation.findNavController(this, R.id.fragment)
-
     }
 }
