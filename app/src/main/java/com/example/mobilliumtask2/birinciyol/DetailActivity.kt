@@ -2,11 +2,13 @@ package com.example.mobilliumtask2.birinciyol
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.mobilliumtask2.databinding.ActivityDetailBinding
 
 class DetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
@@ -18,7 +20,7 @@ class DetailActivity : AppCompatActivity() {
         val getSehir = intent.getStringExtra("sehir")
         val getDereceAraligi = intent.getStringExtra("dereceAraligi")
         val getGunesli = intent.getStringExtra("gunesli")
-        println(getDerece + getSehir + getDereceAraligi + getGunesli)
+        Log.d("DATA", getDerece + getSehir + getDereceAraligi + getGunesli)
 
         binding.apply {
             sehirTVDetailScreen.text = getSehir
