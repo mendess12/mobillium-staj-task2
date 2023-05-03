@@ -33,36 +33,44 @@ class ListFragment : Fragment() {
 
         binding.apply {
             cardView1ListFragment.setOnClickListener {
-                weatherData.sehir = binding.sehirTVListFragment1.text.toString()
-                weatherData.derece = binding.dereceTVListFragment1.text.toString()
-                weatherData.dereceAraligi = binding.dereceAraligiTVListFragment1.text.toString()
-                weatherData.gunesli = binding.gunseliTVListFragment1.text.toString()
-                uuid = 1
-                action()
+                weatherData.apply {
+                    sehir = binding.sehirTVListFragment1.text.toString()
+                    derece = binding.dereceTVListFragment1.text.toString()
+                    dereceAraligi = binding.dereceAraligiTVListFragment1.text.toString()
+                    gunesli = binding.gunseliTVListFragment1.text.toString()
+                    uuid = 1
+                    action()
+                }
             }
             cardView2ListFragment.setOnClickListener {
-                weatherData.sehir = binding.sehirTVListFragment2.text.toString()
-                weatherData.derece = binding.dereceTVListFragment2.text.toString()
-                weatherData.dereceAraligi = binding.dereceAraligiTVListFragment2.text.toString()
-                weatherData.gunesli = binding.gunseliTVListFragment2.text.toString()
-                uuid = 2
-                action()
+                weatherData.apply {
+                    sehir = binding.sehirTVListFragment2.text.toString()
+                    derece = binding.dereceTVListFragment2.text.toString()
+                    dereceAraligi = binding.dereceAraligiTVListFragment2.text.toString()
+                    gunesli = binding.gunseliTVListFragment2.text.toString()
+                    uuid = 2
+                    action()
+                }
             }
             cardView3ListFragment.setOnClickListener {
-                weatherData.sehir = binding.sehirTVListFragment3.text.toString()
-                weatherData.derece = binding.dereceTVListFragment3.text.toString()
-                weatherData.dereceAraligi = binding.dereceAraligiTVListFragment3.text.toString()
-                weatherData.gunesli = binding.gunseliTVListFragment3.text.toString()
-                uuid = 3
-                action()
+                weatherData.apply {
+                    sehir = binding.sehirTVListFragment3.text.toString()
+                    derece = binding.dereceTVListFragment3.text.toString()
+                    dereceAraligi = binding.dereceAraligiTVListFragment3.text.toString()
+                    gunesli = binding.gunseliTVListFragment3.text.toString()
+                    uuid = 3
+                    action()
+                }
             }
             cardView4ListFragment.setOnClickListener {
-                weatherData.sehir = binding.sehirTVListFragment4.text.toString()
-                weatherData.derece = binding.dereceTVListFragment4.text.toString()
-                weatherData.dereceAraligi = binding.dereceAraligiTVListFragment4.text.toString()
-                weatherData.gunesli = binding.gunseliTVListFragment4.text.toString()
-                uuid = 4
-                action()
+                weatherData.apply {
+                    sehir = binding.sehirTVListFragment4.text.toString()
+                    derece = binding.dereceTVListFragment4.text.toString()
+                    dereceAraligi = binding.dereceAraligiTVListFragment4.text.toString()
+                    gunesli = binding.gunseliTVListFragment4.text.toString()
+                    uuid = 4
+                    action()
+                }
             }
         }
 
